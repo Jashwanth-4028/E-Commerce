@@ -32,32 +32,32 @@ export default function Signup() {
             await createUserWithEmailAndPassword(auth, formData.email, formData.password);
             console.log("API URL:", import.meta.env.VITE_API_URL);
 
-    
+
             // Save user in MongoDB
             const response = await axios.post(`${import.meta.env.VITE_API_URL}/signup`, {
                 username: formData.username,
                 email: formData.email,
                 password: formData.password
             });
-    
+
             console.log("MongoDB Response:", response.data);
-    
+
             setFormData({
                 username: "",
                 email: "",
                 password: "",
                 confirmPassword: "",
             });
-    
+            toast.success("User registered successfully! Please login.");
             setTimeout(() => {
                 navigate("/");
-            }, 1000);
+            }, 3000);
         } catch (error) {
             console.error("Signup Error:", error);
             toast.error(error.message || "Error, Please try again");
         }
     };
-    
+
     return (
         <>
             <ToastContainer />
