@@ -26,7 +26,7 @@ export default function Partners() {
                         <img
                             src={logo}
                             alt={`Partner ${index + 1}`}
-                            className="w-[200px] h-auto object-contain"
+                            className="w-[200px] h-auto object-contain" loading="lazy"
                         />
                     </div>
                 ))}

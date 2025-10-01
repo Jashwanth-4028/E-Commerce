@@ -30,6 +30,8 @@ export default function Signup() {
         try {
             console.log("Signing up user:", formData);
             await createUserWithEmailAndPassword(auth, formData.email, formData.password);
+            console.log("API URL:", import.meta.env.VITE_API_URL);
+
     
             // Save user in MongoDB
             const response = await axios.post(`${import.meta.env.VITE_API_URL}/signup`, {
