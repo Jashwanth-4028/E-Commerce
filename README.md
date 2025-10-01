@@ -37,7 +37,6 @@ This project simulates a real-world online shopping platform, providing a comple
 
 1. **User Registration & Login**
    - Email/password authentication via Firebase
-   - Google OAuth integration (optional)
    - Secure session management  
 
 2. **Product Management**
