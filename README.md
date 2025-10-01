@@ -29,7 +29,7 @@ This project simulates a real-world online shopping platform, providing a comple
 | Backend | Node.js, Express.js |
 | Database | MongoDB |
 | Payment Gateway | Razorpay |
-| Deployment |  Vercel | Render |
+| Deployment |  Vercel, Render |
 
 ---
 
