@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/*  scrollbar style */
+
+.scroll-hide::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-hide::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.scroll-hide::-webkit-scrollbar-thumb {
+    background: #536e1c;
+    border-radius: 10px;
+}
+
+.scroll-hide::-webkit-scrollbar-thumb:hover {
+    background: #2d3a15;
+}
