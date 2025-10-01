@@ -51,7 +51,7 @@ export default function Signup() {
             toast.success("User registered successfully! Please login.");
             setTimeout(() => {
                 navigate("/");
-            }, 3000);
+            }, 5000);
         } catch (error) {
             console.error("Signup Error:", error);
             toast.error(error.message || "Error, Please try again");
