@@ -22,8 +22,6 @@ mongoose.connect(MONGO_URI)
     console.error("DB Connection Failed:", error.message);
   });
 
-console.log("Razorpay Key:", process.env.RAZORPAY_KEY_ID);
-console.log("Razorpay Secret:", process.env.RAZORPAY_SECRET);
 
 // ===================== Product Schema =====================
 const productSchema = new mongoose.Schema({
@@ -309,4 +307,6 @@ app.get("/", (req, res) => {
   res.send("EcoMart Backend Running Successfully");
 });
 
-app.listen(5000, () => console.log("EcoMart server running on port 5000"));
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => console.log(`EcoMart server running on port ${PORT}`));
