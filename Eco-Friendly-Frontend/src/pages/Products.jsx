@@ -103,9 +103,9 @@ export default function ProductsList() {
                 </p>
             </div>
 
-            <div className="flex p-4 md:p-6 my-10 md:my-20">
+            <div className="flex flex-row p-4 md:p-6 my-10 md:my-20">
                 {/* Filters */}
-                <div className="w-1/3 md:w-1/4 pr-4">
+               <div className="w-1/3 md:w-1/4 pr-4">
                     <h2 className="text-xl font-semibold mb-4">Filters</h2>
 
                     <div className="mb-10">
@@ -221,7 +221,7 @@ export default function ProductsList() {
                 </div>
 
                 {/* Products Grid */}
-                <div className="w-3/4 pl-4">
+               <div className="w-2/3 md:w-3/4 pl-4">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                         <h2 className="text-[22px] md:text-3xl mb-3 md:mb-0 md:mt-0">Products</h2>
                         <select
@@ -277,7 +277,7 @@ export default function ProductsList() {
                                         <img
                                             src={product.img}
                                             alt={product.name}
-                                            className="w-full h-60 object-center object-cover"
+                                            className="w-full h-auto object-center object-contain"
                                         />
                                         <div className="mt-4">
                                             <h3 className="text-[14px] md:text-[18px]">
