@@ -24,7 +24,7 @@ export default function Login() {
             await signInWithEmailAndPassword(auth, formData.email, formData.password);
 
             setFormData({ email: "", password: "" });
-
+            toast.error("User Logged in");
             setTimeout(() => {
                 navigate("/home");
             }, 1000);
