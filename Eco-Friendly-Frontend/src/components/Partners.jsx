@@ -1,12 +1,11 @@
-import ecert from "../assets/partners/ecert.webp";
-import patagonia from "../assets/partners/patagonia.jpg";
-import seventhGen from "../assets/partners/seventh-generation.webp";
-import drBronner from "../assets/partners/dr.bronner.jpg";
-import lush from "../assets/partners/lush.jpg";
-import usda from "../assets/partners/usda.jpg";
-
-const partners = [ecert, patagonia, seventhGen, drBronner, lush, usda];
-
+const partners = [
+  "/images/partners/ecert.webp",
+  "/images/partners/patagonia.jpg",
+  "/images/partners/seventh-generation.webp",
+  "/images/partners/dr.bronner.jpg",
+  "/images/partners/lush.jpg",
+  "/images/partners/usda.jpg",
+];
 export default function Partners() {
     return (
         <div className="py-10 mb-5 md:py-20">
